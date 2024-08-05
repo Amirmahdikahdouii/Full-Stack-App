@@ -21,7 +21,7 @@ Responses:
 ```json
 {
     "status_code": "200",
-    "message": "Sign-Up successfully compeleted"
+    "message": "success"
 }
 ```
 
@@ -31,7 +31,7 @@ Responses:
 
 ```json
 {
-    "status_code": "209",
+    "status_code": "409",
     "message": "Phone Number already exists"
 }
 ```
