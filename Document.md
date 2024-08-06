@@ -5,7 +5,7 @@ For Interaction between Front-End and Back-End, there is a document here that wi
 
 ### Sign-Up:
 
-Example of Json that will send from Front-End:
+**Request:**
 
 ```json
 {
@@ -14,24 +14,22 @@ Example of Json that will send from Front-End:
 }
 ```
 
-Responses:
+**Responses:**
 
-**Success:**
+- Success:
 
 ```json
 {
-    "status_code": "200",
     "message": "success"
 }
 ```
 
-**Errors:**
+- Errors:
 
 1. Exist Phone Number:
 
 ```json
 {
-    "status_code": "409",
     "message": "Phone Number already exists"
 }
 ```
@@ -40,7 +38,6 @@ Responses:
 
 ```json
 {
-    "status_code": "400",
     "message": "Password is too similar"
 }
 ```

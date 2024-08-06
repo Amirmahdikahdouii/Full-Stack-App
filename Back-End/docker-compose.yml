@@ -1,0 +1,33 @@
+services:
+  web:
+    build:
+      context: .
+    container_name: django_web
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - SECRET_KEY=django-insecure-)ttn$8v@@+^ar3ye(*!6#ihssxzv%r@f9w_o1$-d5-_&pzcway
+      - DB_NAME=fullstack_app
+      - DB_USER=root
+      - DB_PASSWORD=Alimardani33
+      - DB_HOST=db
+      - DB_PORT=3306
+
+  db:
+    image: mysql:latest
+    container_name: mysql_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=fullstack_app
+      - MYSQL_ROOT_PASSWORD=Alimardani33
+    ports:
+      - "3307:3306"
+
+volumes:
+  mysql_data:
