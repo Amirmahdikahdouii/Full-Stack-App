@@ -1,0 +1,31 @@
+
+.header-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.links-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    color: black;
+}
+.links-box a{
+    color: black;
+}
+
+.logo{
+    height: 100px;
+    object-fit: cover;
+    width: 10%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
